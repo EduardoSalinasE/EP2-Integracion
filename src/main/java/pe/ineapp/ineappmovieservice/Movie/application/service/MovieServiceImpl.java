@@ -99,7 +99,7 @@ public class MovieServiceImpl implements MovieService{
                movie.setGenre(request.getGenre()!=null && !request.getGenre().isBlank() ? request.getGenre() : movie.getGenre());
                movie.setYear(request.getYear()!=null && !request.getYear().isBlank() ? request.getYear() : movie.getYear());
                movie.setDirector(request.getDirector()!=null && !request.getDirector().isBlank() ? request.getDirector() : movie.getDirector());
-               movie.setRaiting(request.getRaiting()!=null && !request.getRaiting().isBlank() ? request.getRaiting() : movie.getRaiting());
+               movie.setRating(request.getRating()!=null && !request.getRating().isBlank() ? request.getRating() : movie.getRating());
 
                return BasicResponse.whenSuccess();
             }
@@ -117,6 +117,6 @@ public class MovieServiceImpl implements MovieService{
                 .year(request.getYear())
                 .genre(request.getGenre())
                 .director(request.getDirector())
-                .raiting(request.getRaiting()).build();
+                .rating(request.getRating()).build();
     }
 }

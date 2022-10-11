@@ -11,5 +11,5 @@ public class MovieRequest {
     private String year;
     private String genre;
     private String director;
-    private String raiting;
+    private String rating;
 }

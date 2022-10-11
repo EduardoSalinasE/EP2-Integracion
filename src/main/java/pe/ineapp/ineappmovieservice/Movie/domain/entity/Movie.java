@@ -36,7 +36,7 @@ public class Movie {
     String year;
     String genre;
     String director;
-    String raiting;
+    String rating;
 
 
 }
